@@ -1,6 +1,5 @@
 from math import cos,sin,pi
 from matplotlib.pyplot import plot,show,xlim,ylim
-#from matplotlib.animation import Animation
 
 class environment:
     def __init__(self,size:list):
@@ -37,8 +36,6 @@ class robot:
         self.alpha -= angle 
 
     def trajectory(self,ground:environment):
-        #xlim(ground.size[0])
-        #ylim(ground.size[1])
         xlim((0,ground.size[0]))
         ylim((0,ground.size[1]))
         plot(self.x_values_list,self.y_values_list)
